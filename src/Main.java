@@ -58,10 +58,11 @@ public class Main {
         int bottlesPer20min = bottlesPer1Min * 20;
         System.out.println("Производительность бутылок за 20 минут - " + bottlesPer20min);
         int minInOneDay = 24 * 60;
-        System.out.println("Производительность бутылок за один день - " + minInOneDay);
-        int minInThreeDays = minInOneDay * 3;
+        int bottlesInOneDay = bottlesPer1Min * minInOneDay;
+        System.out.println("Производительность бутылок за один день - " + bottlesInOneDay);
+        int minInThreeDays = bottlesInOneDay * 3;
         System.out.println("Производительность бутылок за три дня - " + minInThreeDays);
-        int minInOneMonth = minInOneDay * 30;
+        int minInOneMonth = bottlesInOneDay * 30;
         System.out.println("Производительность бутылок за один месяц - " + minInOneMonth);
 
         System.out.println("Задание 5");
