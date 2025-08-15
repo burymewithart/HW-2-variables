@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Значение переменной myByte с типом byte равно " + myByte);
         short myShort = 1000;
         System.out.println("Значение переменной myShort с типом short равно " + myShort);
-        long myLong = 1234567890;
+        long myLong = 1234567890L;
         System.out.println("Значение переменной myLong с типом long равно " + myLong);
         float myFloat = 12.3f;
         System.out.println("Значение переменной myFloat с типом float равно " + myFloat);
@@ -36,15 +36,15 @@ public class Main {
 
         System.out.println("Задание 3");
 
-        byte firstTeacher = 23;
-        System.out.println("У Людмилы Павловны " + firstTeacher + " ученика");
-        byte secondTeacher = 27;
-        System.out.println("У Анны Сергеевны " + secondTeacher + " учеников");
-        int thirdTeacher = 30;
-        System.out.println("У Екатерины Андреевны " + thirdTeacher + " учеников");
+        byte quantityPupils1 = 23;
+        System.out.println("У Людмилы Павловны " + quantityPupils1 + " ученика");
+        byte quantityPupils2 = 27;
+        System.out.println("У Анны Сергеевны " + quantityPupils2 + " учеников");
+        int quantityPupils3 = 30;
+        System.out.println("У Екатерины Андреевны " + quantityPupils3 + " учеников");
         short paper = 480;
         System.out.println("Количество бумаги, которое учителя закупили для учеников - " + paper);
-        int sumPupils = firstTeacher + secondTeacher + thirdTeacher;
+        int sumPupils = quantityPupils1 + quantityPupils2 + quantityPupils3;
         System.out.println("Суммарное количество учеников - " + sumPupils);
         int result = paper / sumPupils;
         System.out.println("На каждого ученика рассчитано " + result + " листов бумаги");
